@@ -1,0 +1,17 @@
+{
+  "name": "PPAP Project Tracking System",
+  "short_name": "PPAP Track",
+  "description": "PPAP project tracking for automotive TIER 2 suppliers",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0e131a",
+  "theme_color": "#0e131a",
+  "lang": "th",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

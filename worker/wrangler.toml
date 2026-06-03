@@ -1,0 +1,23 @@
+name = "ppap-api"
+main = "worker.js"
+compatibility_date = "2024-09-01"
+
+# --- D1 database ---
+# Create once:  wrangler d1 create ppap-db   → paste the returned database_id below
+[[d1_databases]]
+binding = "DB"
+database_name = "ppap-db"
+database_id = "REPLACE_WITH_YOUR_D1_ID"
+
+# --- R2 bucket for photos / file attachments (optional until you enable photo upload) ---
+# Create once:  wrangler r2 bucket create ppap-files
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "ppap-files"
+
+# Public base URL for R2 objects (if you connect a custom domain / r2.dev). Leave blank to store inline.
+[vars]
+R2_PUBLIC_URL = ""
+
+# --- Secrets (do NOT commit) ---
+# Set with:  wrangler secret put JWT_SECRET
